@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "marca": "Nike",
+        "nombre": "Air Max 90",
+        "precio": 93,
+        "imagen": "AirMax90.jpg"
+    },
+    {
+        "id": 2,
+        "marca": "Nike",
+        "nombre": "Air Force 1",
+        "precio": 72,
+        "imagen": "AirForce1.jpg"
+    },
+    {
+        "id": 3,
+        "marca": "Adidas",
+        "nombre": "Forum",
+        "precio": 49,
+        "imagen": "Forum.jpg"
+    },
+    {
+        "id": 4,
+        "marca": "Adidas",
+        "nombre": "Campus",
+        "precio": 75,
+        "imagen": "Campus.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "Jordan",
+        "nombre": "Retro 1",
+        "precio": 216,
+        "imagen": "Retro1.jpg"
+    },
+    {
+        "id": 6,
+        "marca": "Jordan",
+        "nombre": "Retro 4",
+        "precio": 212,
+        "imagen": "Retro4.jpg"
+    },
+    {
+        "id": 7,
+        "marca": "Yeezy",
+        "nombre": "350",
+        "precio": 186,
+        "imagen": "350.jpg"
+    },
+    {
+        "id": 8,
+        "marca": "Yeezy",
+        "nombre": "700",
+        "precio": 175,
+        "imagen": "700.jpg"
+    }
+]

@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+}
+
+#navBar{
+    height: 112px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+#men{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: auto;
+}
+
+#menu ul li{
+    color: whitesmoke;
+    list-style: none;
+}
+
+.logo{
+    margin: auto;
+}
+
+.menu1 ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu1 ul li{
+    margin: 0px 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+
+main input {
+    width: 30%;
+    padding: 12px;
+    font-size: 24px;
+    box-shadow: 0px 0px 14px 0px whitesmoke;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    font-weight: 100;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+section {
+    position: fixed;
+    box-shadow: -6px -2px 25px -13px whitesmoke;
+    width: 340px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    transition: all 0.2s;
+    background-color: black;
+    right: -340px;
+    
+}
+
+section h1 {
+    position: absolute;
+    top: 20px;
+    right: 360px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 0px 14px 0px black;
+    background: url("images/carrito.png") no-repeat crimson;
+    background-size: 60%;
+    background-position: 9px center;
+}
+
+section h1 span {
+    display: block;
+    background-color: whitesmoke;
+    border-radius: 150px;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: -10px 0 0 30px;
+}
+
+h2{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p{
+    color: whitesmoke;
+}
+
+h4{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+section h3 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btnAgregar,
+.btnQuitar {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid crimson;
+    transition: all 0.2s;
+}
+
+.btnAgregar:hover,
+.btnQuitar:hover {
+    border: 1px solid white;
+    scale: 1.05;
+}
+
+.productoCarrito {
+    border-bottom: 2px dashed black;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.productoCarrito h2 {
+    margin-bottom: 8px;
+}
+
+.ocultar {
+    right: 0px;
+    transition: all 0.2s;
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+    height: auto;
+    margin: 45px;
+}
+
+.producto {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    box-shadow: 0px 0px 14px 0px whitesmoke;
+}
+
+.producto .precio {
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: black;
+    display: inline-block;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 10px;
+    margin: 4px 0px;
+    font-weight: bold;
+}
+
+.producto .imagen {
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    margin: 20px 0;
+}
+
+.producto .imagen img {
+    max-height: 200px;
+}
+
+.productoCarrito div img{
+    max-height: 200px;
+}
+
+.producto .btnAgregar {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.botonCat{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 15px;
+    border: 1px solid crimson;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.botonCat.seleccionado{
+    border: 1px solid whitesmoke;
+}
+
+.botonCat:hover,
+.botonCat:hover {
+    border: 1px solid white;
+    scale: 1.05;
+}
+
+#scroll {
+    max-height: 96%;
+    overflow-y: auto;
+    padding-left: 5px;
+}
+
+#botonComprar{
+    width: 100%; 
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid crimson;
+    transition: all 0.2s;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid crimson;
+    position: inherit;
+}
+
+.logo2{
+    margin-left: 110px;
+}
+
+.pagos{
+    margin-right: 70px;
+}
+
+.pagos img{
+    height: 40px;
+    margin-right: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    #menu {
+        display: none;
+    }
+
+    .logo{
+        margin: 20px;
+    }
+
+    .buscarr {
+        display: none;
+    }
+
+    
+
+    .car {
+        width: 30%;
+    }
+
+    main input {
+        width: 70%;
+    }
+
+    main section {
+        width: 60%;
+    }
+
+    main section h1 {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    #productos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ocultar {
+        width: 70%;
+    }
+
+    .ocultar h1 {
+        left: -70px;
+    }
+
+    .car h2{
+        font-size: 18px;
+    }
+
+    .car h3{
+        font-size: 14px;
+    }
+
+    .botonCat{
+        margin: 3px;
+        font-size: 15px;
+        padding: 5px;
+        margin-top: 12px;
+    }
+
+    footer {
+        height: 70px;
+        justify-content: space-around;
+    }
+
+    .logo2{
+        margin-left: 0px;
+    }
+
+    .logo2 img{
+        height: 20px;
+        margin: 5px;
+    }
+
+    .pagos{
+        margin-right: 0px;
+    }
+
+    .pagos img{
+        height: 20px;
+        margin: 5px;
+    }
+}
