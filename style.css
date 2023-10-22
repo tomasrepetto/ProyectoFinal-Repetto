@@ -345,6 +345,14 @@ footer{
         margin-top: 12px;
     }
 
+    .productoCarrito div img {
+        max-height: 100px;
+    }
+
+    section{
+        padding: 20px;
+    }
+
     footer {
         height: 70px;
         justify-content: space-around;
