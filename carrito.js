@@ -224,7 +224,7 @@ for (const boton of botonesAgregar) {
       text: `Se ha añadido ${producto.nombre} al carrito`,
       position: "center",
       gravity: "top",
-      duration: 30000,
+      duration: 2000,
       style: {
         background: "linear-gradient(to right, #A51C30, #000)",
         color: "#f5f5f5",

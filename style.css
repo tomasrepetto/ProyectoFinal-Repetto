@@ -76,7 +76,7 @@ section {
     height: 100%;
     top: 0;
     right: 0;
-    padding: 30px;
+    padding: 45px;
     transition: all 0.2s;
     background-color: black;
     right: -340px;
@@ -208,7 +208,7 @@ section h3 {
 }
 
 .productoCarrito div img{
-    max-height: 200px;
+    max-height: 160px;
 }
 
 .producto .btnAgregar {
