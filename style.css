@@ -241,7 +241,7 @@ section h3 {
 }
 
 #scroll {
-    max-height: 96%;
+    max-height: 92%;
     overflow-y: auto;
     padding-left: 5px;
 }
@@ -298,7 +298,9 @@ footer{
         display: none;
     }
 
-    
+    #scroll{
+        max-height: 90%;
+    }
 
     .car {
         width: 30%;
